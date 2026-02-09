@@ -5,7 +5,7 @@
     <artifactId>unified-test-automation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
-        <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
