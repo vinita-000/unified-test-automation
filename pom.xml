@@ -5,13 +5,20 @@
     <artifactId>unified-test-automation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.7.0</version>
             <scope>test</scope>
         </dependency>
+            <!-- Selenium Java Dependency -->
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>4.40.0</version>
+                <!-- Replace 4.40.0 with the latest stable version from Maven Repository -->
+            </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -19,6 +26,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version> <!-- Use the latest version -->
+               <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
             </plugin>
         </plugins>
     </build>
